@@ -1,0 +1,121 @@
+.dashboard-body {
+    background: #F5F6F8;
+    flex-grow: 1;
+    padding: 40px;
+}
+.page-dashboard {
+    .header {
+        display: flex;
+        margin-bottom: 50px;
+        h3 {
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+            color: #213F76;
+            margin: 0 0 0 10px;
+            flex-basis: 120px;
+        }
+        .date-picker-contain {
+            flex-basis: 121px;
+            margin-left: 20px;
+            position: relative;
+            .value-overlay {
+                position: absolute;
+                left: 30px;
+                top: 4px;
+                background-color: grey;
+                right: 1px;
+                bottom: 4px;
+                color: #213F76;
+                background: #F5F6F8;
+                padding-left: 4px;
+                padding-top: 3px;
+                font-family: $logo-font;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .date-picker-contain.odd {
+            margin-left: auto;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-family: $primary-font;
+            font-size: 14px;
+            line-height: 17px;
+            color: #213F76;
+            border: 1px solid #6C81A6;
+            margin-left: 20px;
+            border-radius: 2px;
+            background: #F5F6F8;
+            padding: 0 15px 0 10px;
+            width: 72px;
+            height: 100%;
+        }
+        select:focus {
+            outline-width: 0;
+        }
+        .drop-down {
+            position: relative;
+            i {
+                font-size: 10px;
+                position: absolute;
+                right: 7px;
+                top: 8px;
+            }
+        }
+    }
+    .main-part {
+        display: flex;
+        justify-content: space-between;
+
+        .status-card {
+            height: 194px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            .img-contain {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 30px auto 20px auto;
+            }
+            .number {
+                margin: auto;
+                font-family: $primary-font;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+                color: #213F76;
+                span {
+                    font-size: 15px;
+                }
+            }
+            .card-title {
+                margin-top: 15px;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #72829F;
+            }
+        }
+        .contract .img-contain {
+            background: rgba(48, 182, 232, 0.1);
+        }
+        .customer .img-contain {
+            background: rgba(255, 161, 67, 0.1);
+        }
+        .currency .img-contain {
+            background: rgba(35, 208, 81, 0.1);
+        }
+    }
+}

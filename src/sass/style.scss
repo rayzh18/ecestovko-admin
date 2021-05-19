@@ -1,0 +1,255 @@
+@import 'variables';
+@import 'login';
+@import 'sidebar';
+@import 'topbar';
+@import 'dashboard';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+// input style start
+.input-text {
+    width: 100%;
+    height: 56px;
+    padding: 18px 16px;
+    font-size: 16px;
+    border: solid 1px #D0D6E2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.input-text:focus {
+    border: solid 1px #1a2c50;
+    outline-width: 0;
+}
+// input style end
+
+// orange button style start
+.orange-button {
+    width: 100%;
+    background: #FFA143;
+    border-radius: 28px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $primary-font;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orange-button:hover {
+    cursor: pointer;
+}
+.orange-button:active {
+    border: solid 2px #e28a32;
+    outline-width: 0;
+}
+// orange button style end
+
+// dashboard style start
+.dashboard-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+// dashboard style end
+.mainboard-contain {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+//date picker start
+input[type="date"] {
+	position: relative;
+}
+input[type="date"]::-webkit-inner-spin-button {
+	opacity: 0
+}
+input[type="date"].date-picker::-webkit-calendar-picker-indicator {
+	background: url('../assets/calendar-icon.svg') no-repeat left  ;
+	position: absolute;
+	left: -14px;
+	top: 4px;
+}
+input[type="date"].date-picker {
+    padding: 6px 0px 6px 30px;
+    width: 121px;
+    color: #213F76;
+    background: #F5F6F8;
+    border: 1px solid #6C81A6;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 1.3;
+}
+//date picker end
+
+.w-30 {
+    width: 30%;
+}
+
+.w-p-50 {
+    width: 50px;
+}
+.w-p-100 {
+    width: 100px;
+}
+.w-p-150 {
+    width: 150px;
+}
+.w-p-200 {
+    width: 200px;
+}
+.w-p-1500 {
+    width: 1500px;
+}
+// table start
+.table-contain {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    width: 100%;
+    .table-title {
+        font-family: $primary-font;
+        font-size: 16px;
+        line-height: 19px;
+        color: #213F76;
+        padding: 24px;
+    }
+    .table-element {
+        width: 100%;
+        .header {
+            width: 100%;
+            display: flex;
+            margin-bottom: 0;
+            div {
+                font-family: $primary-font;
+                font-size: 12px;
+                line-height: 15px;
+                color: #72829F;
+                padding: 10px;
+            }
+        }
+        .table-row {
+            border-top: solid 1px #E9ECF2;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            div {
+                font-family: $primary-font;
+                font-size: 12px;
+                line-height: 15px;
+                color: #213F76;
+                padding: 10px;
+            }
+            div:first-child {
+                padding-left: 24px;
+            }
+            div:last-child {
+                padding-right: 24px;
+            }
+        }
+        .table-data-row:nth-child(2n) {
+            background: #FFFFFF;
+        }
+        .table-data-row:nth-child(2n) {
+            background: #F4F6F9;
+        }
+
+    }
+}
+// table end
+.text-align-right {
+    text-align: right;
+}
+.text-align-center {
+    text-align: center;
+}
+.text-underline {
+    text-decoration-line: underline;
+}
+.color-red {
+    color: #FF4343;
+}
+.color-green {
+    color: #23D051;
+}
+
+// modal start
+.modal-contain {
+    .modal-content {
+        padding: 32px 34px;
+        width: 280px;
+        .title {
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+            color: #213F76;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sub-title {
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #213F76;
+            margin-bottom: 20px;
+        }
+        .name-list-item {
+            display: flex;
+            margin-bottom: 15px;
+            div {
+                font-family: $primary-font;
+                font-size: 12px;
+                line-height: 15px;
+                color: #213F76;
+                width: 40%;
+            }
+        }
+        .name-list-item.header {
+            div {
+                font-family: $primary-font;
+                font-size: 12px;
+                line-height: 15px;
+                color: #72829F;
+                width: 40%;
+            }
+        }
+        .download-item {
+            font-family: $primary-font;
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #30B6E8;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+        .orange-button {
+            width: 135px;
+            height: 33px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 280px;
+    }
+}
+// modal end

@@ -1,0 +1,45 @@
+.top-bar-contain {
+    border-bottom: solid 3px #F1F1F1;
+    flex-basis: 60px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    .item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 24px;
+        border-left: solid 1px #F6F7FB;
+        border-right: solid 1px #F6F7FB;
+        i {
+            font-size: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+        .news-count {
+            background: #E0001D;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            font-family: $primary-font;
+            font-weight: normal;
+            padding: 2px;
+            font-size: 10px;
+            line-height: 7px;
+            color: #FFFFFF;
+            position: absolute;
+            left: 53.33%;
+            top: 27%;
+        }
+    }
+    .item:hover {
+        cursor: pointer;
+    }
+    .user-name {
+        font-family: $primary-font;
+        font-size: 14px;
+        line-height: 17px;
+        color: #535875;
+        padding-left: 15px;
+    }
+}
